@@ -1,7 +1,7 @@
 # Progress.SuccessStories
 Sitefinity CMS project
 
-My default SQL server instance name is SQLEXPRESS. I think it's worth mentioning, because the name Sitefinity was suggesting was SQLExpress, so you may have to change this setting to work with your SQL server.
+My default SQL server instance name is SQLEXPRESS. I think it's worth mentioning, because the name Sitefinity was suggesting was SQLExpress, so you may have to change this setting to work with your SQL server. (DB is in App_Data folder)
 
 The administrator credentials are: Username: philsw359@gmail.com Pass: sitefinity
 
