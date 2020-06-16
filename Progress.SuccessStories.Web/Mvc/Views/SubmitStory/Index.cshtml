@@ -1,0 +1,99 @@
+﻿@model Progress.SuccessStories.Web.Mvc.Models.SuccessStoryViewModel
+
+
+<div class="services-area">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+                <div class="section-tittle text-center mb-80">
+                    <span>success stories</span>
+                    <h2>Submit a Success Story</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="contact-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="contact-title">Enter Success Story details</h2>
+            </div>
+            <div class="col-lg-8">
+                @using (Ajax.BeginForm("Create", "SubmitStory", new AjaxOptions { HttpMethod = "POST", OnComplete = "RedirectToHome", LoadingElementId = "preloader-active" }, new { enctype = "multipart/form-data", @class = "form-contact contact_form", id = "submitStoryForm" }))
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input class="form-control valid" name="Title" id="Title" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Story title'" placeholder="Title" required oninvalid="this.setCustomValidity('Title is required')"
+                                       oninput="this.setCustomValidity('')">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <textarea class="form-control w-100" name="Description" id="Description" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Description'" placeholder=" Enter Description" required oninvalid="this.setCustomValidity('Description is required')"
+                                          oninput="this.setCustomValidity('')"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <textarea class="form-control w-100" name="SummaryDescription" id="SummaryDescription" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Summary Description'" placeholder=" Enter Summary Description" required oninvalid="this.setCustomValidity('Summary Description is required')"
+                                          oninput="this.setCustomValidity('')"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input class="form-control valid" name="ProductsUsed" id="ProductsUsed"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter used Products'" placeholder=" Enter used Products" required oninvalid="this.setCustomValidity('Used Products is required')"
+                                          oninput="this.setCustomValidity('')">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input class="form-control valid" name="Company" id="Company" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Company'" placeholder="Company" required oninvalid="this.setCustomValidity('Company is required')"
+                                       oninput="this.setCustomValidity('')">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input class="form-control valid" name="CompanyWebsite" id="CompanyWebsite" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Company website'" placeholder="Company website" required oninvalid="this.setCustomValidity('Company website is required')"
+                                       oninput="this.setCustomValidity('')">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input class="form-control valid" name="Industry" id="Industry" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Industry'" placeholder="Industry" required oninvalid="this.setCustomValidity('Industry is required')"
+                                       oninput="this.setCustomValidity('')">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                           
+                                <div class="col-sm-1">
+                                    <label for="Thumbnail">Thumbnail</label>
+                                </div>
+                                <div class="col-sm-11">
+                                    <input type="file" name="Thumbnail" id="Thumbnail" />
+                                </div>
+                           
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <button type="submit" onclick="topFunction()" id="sbmtbtn" class="button button-contactForm boxed-btn">Submit</button>
+                        <button style="visibility:hidden" id="notifybtn"></button>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    function RedirectToHome() {
+        $("#notifybtn").click();
+        window.location.replace("@Request.Url.GetLeftPart(UriPartial.Authority)");
+    }
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>

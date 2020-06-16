@@ -1,0 +1,230 @@
+﻿<error errorId="c793d97b-ad87-4357-aaf9-755cb418d30e" application="/LM/W3SVC/2/ROOT" host="DESKTOP-DTFIU0M" type="Telerik.Sitefinity.Data.DuplicateUrlException" message="Url already exists" source="Telerik.Sitefinity" detail="Telerik.Sitefinity.Data.DuplicateUrlException: Url already exists&#xD;&#xA;   at Telerik.Sitefinity.Lifecycle.LifecycleDecorator.ExecuteOnPublish(ILifecycleDataItemGeneric masterItem, ILifecycleDataItemGeneric liveItem, CultureInfo culture, Nullable`1 publicationDate)&#xD;&#xA;   at Telerik.Sitefinity.Lifecycle.LifecycleDecorator.PublishWithSpecificDate(ILifecycleDataItemGeneric masterItem, DateTime publicationDate, CultureInfo culture)&#xD;&#xA;   at Telerik.Sitefinity.Lifecycle.LifecycleDecorator.Publish(ILifecycleDataItemGeneric masterItem, CultureInfo culture)&#xD;&#xA;   at Telerik.Sitefinity.Lifecycle.LifecycleDecorator.Telerik.Sitefinity.Lifecycle.ILifecycleDecorator.Publish(ILifecycleDataItem item, CultureInfo culture)&#xD;&#xA;   at Progress.SuccessStories.Web.Services.SucessStoryService.CreateSuccessStory(SuccessStoryViewModel submittedStory, String domain) in C:\Users\phils\Source\Repos\Progress.SuccessStories\Progress.SuccessStories.Web\Mvc\Services\SucessStoryService.cs:line 74" user="philsw359@gmail.com" time="2020-06-16T11:07:50.9913261Z">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CONNECTION:close&#xD;&#xA;HTTP_CONTENT_LENGTH:885&#xD;&#xA;HTTP_CONTENT_TYPE:multipart/form-data; boundary=----WebKitFormBoundaryKnzeWAlVPq1BUkkM&#xD;&#xA;HTTP_ACCEPT:*/*&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip, deflate, br&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:en-US,en;q=0.9&#xD;&#xA;HTTP_COOKIE:ai_user=NGYi/|2020-04-03T12:35:11.530Z; .AspNet.Consent=yes; sf_site=b88067fd-040c-4815-8e55-d41b35c84ee5; 44348.AspNet.Cookies=u0ynuDczN4b6YY6Hru29ERs7pVAny-g-jXQ5eZpCOClFMWCJIPmUG78Akv5fo72_WCc-U2ByC0OBhdT6yW8P_Z5bBvgaLnaev4Y3gQfxW1_Ps5R3T4dpKtJQtPQl8hUpBSCVphRpP2GqXRJwHlYmdY-R7MoLQwTXCMydfqitois1koDTOJUqBIpXFnG2B5c5pRRnPnj2xZFuIfMccdaJ4W_G92tGrRsPS4H9w5018axzKJ-6YUs-HPI9C8d1yDlW8a5Z84jQSbrWnshApBhwLup3-vRRaiVc0VveSaIjGTeVG3z72rjK8aG9EpMTwue8B0Y7RfaxbQa16kv46qBw0j5a05blSaFPvWgNVuoEM2yjicN1E2GGP3YTpG2x7B4IYiP7z-cWmfn0kzDrW_4aIjHAGvyIphApml5gQf2dO47rQeGIRDyM5USkFUx3Qk58_fVr8yTBibFl8BoqlZxnNftDXlNC-NwYawNblLd7qVBLWLW2EDo7mrP1v9_cNaBceb4Ftl_8LRUchu_tJraVdIJSWui0TrxQIx9zWyYwHIjfRGnI71Xf3O3u980hC8NxJLApJ50ROB_seuSSYwhjOMYH8jEiO9AOrEWSC3b1KA8Nnp3teyxH6_2gY8J_tXrlGQZQiXU-aAQh28cFVWZpZThjBO6tFloEzAoDxV_WjpUF-OccLOgcbF1saVkbvSZFqbKv656ijFupbCoDBwMquvLdI4dQI4eMoQr1Jflo7JwJvCBFUgPHwwRo3hdCNaUrsSTfx9t47b2UJ-nDP8Qo7Fyd3DWFWNSUz8YHtJziS5puBzNebK0TVFL_Q8-glPE-JzApHzDllvRDTNp3_RfYYfiGk3_5ushsUbDbJyz2p4aE1gZMciK6jo-Z8YcWUgjyz1LxtnCbwphmxChsLZKwGM0_gk3oPv-O2VAS8BxxlojjujKTATUsD0X7L9wFg9WEqx_qoT4gli5xjg4N7kwLqFfPIWbkdlAE8Sv6iXllw85Ydnz1GHuV0K_NrlyNhREja2hQuXcYiO8NaTmCBybMG8g0IkY6vVy0Usoht5InGxJ-Xlta1KftSiTlwltwzdK6jE7ACjQWrCjNuWt9CaOQ9QGtuYcjaCP4QQIXIj9DXqr2Hyws-N121KtHVv5ovEQUjNppur8z7bIbpmpqTmiPeAsWo0XaEk13lTIKsdHCO017Oqv-EfEFYgAZjR2T9x3DvBooa3pcySGaG1PJFTjKKD0y0Knn871fpd48DkfS7lslS1zMmAH9e3j_ve4RUroZ0rBPJf5vGe_g-JJZ5MgjhB5T2pFlRfPUWcWQrC4AhfGt160dpn4YFjIkkbRmRy6K5uCLzVULB741Ov_yeVZYOKwoZTga7_28AdLMwtHE7kZ4_Tia4n7IlIobzmjheKQuAdSJoMAUUcb3GT1aRerRxXaTPk7tic8KRu29dtgqmT39HQx2dyyEeN426_dBr70HVP1k38HJFXz3b3mIYgQ1qOy0j5d--SchBQHreL8lAjPQCT5wZvhsn8ckN8PTsfbH7YO6fb7lm3W7w1RrhWXySPXHV4EWjmx-0fuFMUqqwa8-7rCmHcskjPAnDF9pOOEMtk5oEXezMvyrQKEkZQiKCbxini-M2inVoxDuC-Da67_XS43ynj6wOdHQf7smKUk2d_3-A2wgqEl8YWDsGAz7GZ3ZXHBnJudi7Q66Xh6-HrIfOSBynBQXoradmsULzof_pJMgA2ltDKaBRiMBA6r_udoSbK3wUSdifYC2p2uqiwHQLO1Krhqef_tKHubCrK5RkGhEseprboqCKQ5LJs_5zpjiSQ6XxpQVTXSjdSztF9c7cRBtArYQS1-rHRdE4zjgUaNmdkO3vwQFygFklCs4fRMqBbdfsxSwrQa7CUKhVhqbEfBM-mm4hTWfUScUcgDWRQlbp9242eJ8YKwcNADfbuHcLb0loPqkqCkYk-9SAqRVgQ1wI9SFCqJXKEv-nRcwctZTKzZpqhIfM3mEChQ4Wh4W1ZrLKYGaognAhkxlrrHbJ9NwStWoY65b8ttrTguHM9-YTrBwoZ3sDBoFXetXHehz6PJXDQ1Q5dCLuB_FE9Yc_lZg80Du5_u1TsyRGcUStEop6rZpRFBmAPwYOaoECcnals0U_psOynlWXyuliNkIBTuecmLm7eC41dGolGzjsmT78cUXCG3CQ4mHirdUeQlBasmHBaQJNKPZus9WveKcdQlnkXzEBDuqaow-IJdyCEwrPaXL0Feg2t18smwgUA; ASP.NET_SessionId=golvgtoe4oqe20v43reg2arc; sf-prs-ss=637278992065060000; sf-prs-lu=https://localhost:44348/; sf_timezoneoffset=-180&#xD;&#xA;HTTP_HOST:localhost:44348&#xD;&#xA;HTTP_REFERER:https://localhost:44348/submit-a-success-story&#xD;&#xA;HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36&#xD;&#xA;HTTP_SEC_FETCH_DEST:empty&#xD;&#xA;HTTP_X_REQUESTED_WITH:XMLHttpRequest&#xD;&#xA;HTTP_ORIGIN:https://localhost:44348&#xD;&#xA;HTTP_SEC_FETCH_SITE:same-origin&#xD;&#xA;HTTP_SEC_FETCH_MODE:cors&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Connection: close&#xD;&#xA;Content-Length: 885&#xD;&#xA;Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryKnzeWAlVPq1BUkkM&#xD;&#xA;Accept: */*&#xD;&#xA;Accept-Encoding: gzip, deflate, br&#xD;&#xA;Accept-Language: en-US,en;q=0.9&#xD;&#xA;Cookie: ai_user=NGYi/|2020-04-03T12:35:11.530Z; .AspNet.Consent=yes; sf_site=b88067fd-040c-4815-8e55-d41b35c84ee5; 44348.AspNet.Cookies=u0ynuDczN4b6YY6Hru29ERs7pVAny-g-jXQ5eZpCOClFMWCJIPmUG78Akv5fo72_WCc-U2ByC0OBhdT6yW8P_Z5bBvgaLnaev4Y3gQfxW1_Ps5R3T4dpKtJQtPQl8hUpBSCVphRpP2GqXRJwHlYmdY-R7MoLQwTXCMydfqitois1koDTOJUqBIpXFnG2B5c5pRRnPnj2xZFuIfMccdaJ4W_G92tGrRsPS4H9w5018axzKJ-6YUs-HPI9C8d1yDlW8a5Z84jQSbrWnshApBhwLup3-vRRaiVc0VveSaIjGTeVG3z72rjK8aG9EpMTwue8B0Y7RfaxbQa16kv46qBw0j5a05blSaFPvWgNVuoEM2yjicN1E2GGP3YTpG2x7B4IYiP7z-cWmfn0kzDrW_4aIjHAGvyIphApml5gQf2dO47rQeGIRDyM5USkFUx3Qk58_fVr8yTBibFl8BoqlZxnNftDXlNC-NwYawNblLd7qVBLWLW2EDo7mrP1v9_cNaBceb4Ftl_8LRUchu_tJraVdIJSWui0TrxQIx9zWyYwHIjfRGnI71Xf3O3u980hC8NxJLApJ50ROB_seuSSYwhjOMYH8jEiO9AOrEWSC3b1KA8Nnp3teyxH6_2gY8J_tXrlGQZQiXU-aAQh28cFVWZpZThjBO6tFloEzAoDxV_WjpUF-OccLOgcbF1saVkbvSZFqbKv656ijFupbCoDBwMquvLdI4dQI4eMoQr1Jflo7JwJvCBFUgPHwwRo3hdCNaUrsSTfx9t47b2UJ-nDP8Qo7Fyd3DWFWNSUz8YHtJziS5puBzNebK0TVFL_Q8-glPE-JzApHzDllvRDTNp3_RfYYfiGk3_5ushsUbDbJyz2p4aE1gZMciK6jo-Z8YcWUgjyz1LxtnCbwphmxChsLZKwGM0_gk3oPv-O2VAS8BxxlojjujKTATUsD0X7L9wFg9WEqx_qoT4gli5xjg4N7kwLqFfPIWbkdlAE8Sv6iXllw85Ydnz1GHuV0K_NrlyNhREja2hQuXcYiO8NaTmCBybMG8g0IkY6vVy0Usoht5InGxJ-Xlta1KftSiTlwltwzdK6jE7ACjQWrCjNuWt9CaOQ9QGtuYcjaCP4QQIXIj9DXqr2Hyws-N121KtHVv5ovEQUjNppur8z7bIbpmpqTmiPeAsWo0XaEk13lTIKsdHCO017Oqv-EfEFYgAZjR2T9x3DvBooa3pcySGaG1PJFTjKKD0y0Knn871fpd48DkfS7lslS1zMmAH9e3j_ve4RUroZ0rBPJf5vGe_g-JJZ5MgjhB5T2pFlRfPUWcWQrC4AhfGt160dpn4YFjIkkbRmRy6K5uCLzVULB741Ov_yeVZYOKwoZTga7_28AdLMwtHE7kZ4_Tia4n7IlIobzmjheKQuAdSJoMAUUcb3GT1aRerRxXaTPk7tic8KRu29dtgqmT39HQx2dyyEeN426_dBr70HVP1k38HJFXz3b3mIYgQ1qOy0j5d--SchBQHreL8lAjPQCT5wZvhsn8ckN8PTsfbH7YO6fb7lm3W7w1RrhWXySPXHV4EWjmx-0fuFMUqqwa8-7rCmHcskjPAnDF9pOOEMtk5oEXezMvyrQKEkZQiKCbxini-M2inVoxDuC-Da67_XS43ynj6wOdHQf7smKUk2d_3-A2wgqEl8YWDsGAz7GZ3ZXHBnJudi7Q66Xh6-HrIfOSBynBQXoradmsULzof_pJMgA2ltDKaBRiMBA6r_udoSbK3wUSdifYC2p2uqiwHQLO1Krhqef_tKHubCrK5RkGhEseprboqCKQ5LJs_5zpjiSQ6XxpQVTXSjdSztF9c7cRBtArYQS1-rHRdE4zjgUaNmdkO3vwQFygFklCs4fRMqBbdfsxSwrQa7CUKhVhqbEfBM-mm4hTWfUScUcgDWRQlbp9242eJ8YKwcNADfbuHcLb0loPqkqCkYk-9SAqRVgQ1wI9SFCqJXKEv-nRcwctZTKzZpqhIfM3mEChQ4Wh4W1ZrLKYGaognAhkxlrrHbJ9NwStWoY65b8ttrTguHM9-YTrBwoZ3sDBoFXetXHehz6PJXDQ1Q5dCLuB_FE9Yc_lZg80Du5_u1TsyRGcUStEop6rZpRFBmAPwYOaoECcnals0U_psOynlWXyuliNkIBTuecmLm7eC41dGolGzjsmT78cUXCG3CQ4mHirdUeQlBasmHBaQJNKPZus9WveKcdQlnkXzEBDuqaow-IJdyCEwrPaXL0Feg2t18smwgUA; ASP.NET_SessionId=golvgtoe4oqe20v43reg2arc; sf-prs-ss=637278992065060000; sf-prs-lu=https://localhost:44348/; sf_timezoneoffset=-180&#xD;&#xA;Host: localhost:44348&#xD;&#xA;Referer: https://localhost:44348/submit-a-success-story&#xD;&#xA;User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36&#xD;&#xA;sec-fetch-dest: empty&#xD;&#xA;x-requested-with: XMLHttpRequest&#xD;&#xA;origin: https://localhost:44348&#xD;&#xA;sec-fetch-site: same-origin&#xD;&#xA;sec-fetch-mode: cors&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="/LM/W3SVC/2/ROOT" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="C:\Users\phils\Source\Repos\Progress.SuccessStories\Progress.SuccessStories.Web\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="Cookies" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="philsw359@gmail.com" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="*****" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="philsw359@gmail.com" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="philsw359@gmail.com" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="256" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="2048" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="CN=localhost" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="CN=localhost" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="885" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="multipart/form-data; boundary=----WebKitFormBoundaryKnzeWAlVPq1BUkkM" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="CGI/1.1" />
+    </item>
+    <item name="HTTPS">
+      <value string="on" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="256" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="2048" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="CN=localhost" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="CN=localhost" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="2" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="/LM/W3SVC/2" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/submit-a-success-story/Create/" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="C:\Users\phils\Source\Repos\Progress.SuccessStories\Progress.SuccessStories.Web\submit-a-success-story\Create\" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="55009" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="POST" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/submit-a-success-story/Create/" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="localhost" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="44348" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="1" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="Microsoft-IIS/10.0" />
+    </item>
+    <item name="URL">
+      <value string="/submit-a-success-story/Create/" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="close" />
+    </item>
+    <item name="HTTP_CONTENT_LENGTH">
+      <value string="885" />
+    </item>
+    <item name="HTTP_CONTENT_TYPE">
+      <value string="multipart/form-data; boundary=----WebKitFormBoundaryKnzeWAlVPq1BUkkM" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="*/*" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip, deflate, br" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="en-US,en;q=0.9" />
+    </item>
+    <item name="HTTP_COOKIE">
+      <value string="ai_user=NGYi/|2020-04-03T12:35:11.530Z; .AspNet.Consent=yes; sf_site=b88067fd-040c-4815-8e55-d41b35c84ee5; 44348.AspNet.Cookies=u0ynuDczN4b6YY6Hru29ERs7pVAny-g-jXQ5eZpCOClFMWCJIPmUG78Akv5fo72_WCc-U2ByC0OBhdT6yW8P_Z5bBvgaLnaev4Y3gQfxW1_Ps5R3T4dpKtJQtPQl8hUpBSCVphRpP2GqXRJwHlYmdY-R7MoLQwTXCMydfqitois1koDTOJUqBIpXFnG2B5c5pRRnPnj2xZFuIfMccdaJ4W_G92tGrRsPS4H9w5018axzKJ-6YUs-HPI9C8d1yDlW8a5Z84jQSbrWnshApBhwLup3-vRRaiVc0VveSaIjGTeVG3z72rjK8aG9EpMTwue8B0Y7RfaxbQa16kv46qBw0j5a05blSaFPvWgNVuoEM2yjicN1E2GGP3YTpG2x7B4IYiP7z-cWmfn0kzDrW_4aIjHAGvyIphApml5gQf2dO47rQeGIRDyM5USkFUx3Qk58_fVr8yTBibFl8BoqlZxnNftDXlNC-NwYawNblLd7qVBLWLW2EDo7mrP1v9_cNaBceb4Ftl_8LRUchu_tJraVdIJSWui0TrxQIx9zWyYwHIjfRGnI71Xf3O3u980hC8NxJLApJ50ROB_seuSSYwhjOMYH8jEiO9AOrEWSC3b1KA8Nnp3teyxH6_2gY8J_tXrlGQZQiXU-aAQh28cFVWZpZThjBO6tFloEzAoDxV_WjpUF-OccLOgcbF1saVkbvSZFqbKv656ijFupbCoDBwMquvLdI4dQI4eMoQr1Jflo7JwJvCBFUgPHwwRo3hdCNaUrsSTfx9t47b2UJ-nDP8Qo7Fyd3DWFWNSUz8YHtJziS5puBzNebK0TVFL_Q8-glPE-JzApHzDllvRDTNp3_RfYYfiGk3_5ushsUbDbJyz2p4aE1gZMciK6jo-Z8YcWUgjyz1LxtnCbwphmxChsLZKwGM0_gk3oPv-O2VAS8BxxlojjujKTATUsD0X7L9wFg9WEqx_qoT4gli5xjg4N7kwLqFfPIWbkdlAE8Sv6iXllw85Ydnz1GHuV0K_NrlyNhREja2hQuXcYiO8NaTmCBybMG8g0IkY6vVy0Usoht5InGxJ-Xlta1KftSiTlwltwzdK6jE7ACjQWrCjNuWt9CaOQ9QGtuYcjaCP4QQIXIj9DXqr2Hyws-N121KtHVv5ovEQUjNppur8z7bIbpmpqTmiPeAsWo0XaEk13lTIKsdHCO017Oqv-EfEFYgAZjR2T9x3DvBooa3pcySGaG1PJFTjKKD0y0Knn871fpd48DkfS7lslS1zMmAH9e3j_ve4RUroZ0rBPJf5vGe_g-JJZ5MgjhB5T2pFlRfPUWcWQrC4AhfGt160dpn4YFjIkkbRmRy6K5uCLzVULB741Ov_yeVZYOKwoZTga7_28AdLMwtHE7kZ4_Tia4n7IlIobzmjheKQuAdSJoMAUUcb3GT1aRerRxXaTPk7tic8KRu29dtgqmT39HQx2dyyEeN426_dBr70HVP1k38HJFXz3b3mIYgQ1qOy0j5d--SchBQHreL8lAjPQCT5wZvhsn8ckN8PTsfbH7YO6fb7lm3W7w1RrhWXySPXHV4EWjmx-0fuFMUqqwa8-7rCmHcskjPAnDF9pOOEMtk5oEXezMvyrQKEkZQiKCbxini-M2inVoxDuC-Da67_XS43ynj6wOdHQf7smKUk2d_3-A2wgqEl8YWDsGAz7GZ3ZXHBnJudi7Q66Xh6-HrIfOSBynBQXoradmsULzof_pJMgA2ltDKaBRiMBA6r_udoSbK3wUSdifYC2p2uqiwHQLO1Krhqef_tKHubCrK5RkGhEseprboqCKQ5LJs_5zpjiSQ6XxpQVTXSjdSztF9c7cRBtArYQS1-rHRdE4zjgUaNmdkO3vwQFygFklCs4fRMqBbdfsxSwrQa7CUKhVhqbEfBM-mm4hTWfUScUcgDWRQlbp9242eJ8YKwcNADfbuHcLb0loPqkqCkYk-9SAqRVgQ1wI9SFCqJXKEv-nRcwctZTKzZpqhIfM3mEChQ4Wh4W1ZrLKYGaognAhkxlrrHbJ9NwStWoY65b8ttrTguHM9-YTrBwoZ3sDBoFXetXHehz6PJXDQ1Q5dCLuB_FE9Yc_lZg80Du5_u1TsyRGcUStEop6rZpRFBmAPwYOaoECcnals0U_psOynlWXyuliNkIBTuecmLm7eC41dGolGzjsmT78cUXCG3CQ4mHirdUeQlBasmHBaQJNKPZus9WveKcdQlnkXzEBDuqaow-IJdyCEwrPaXL0Feg2t18smwgUA; ASP.NET_SessionId=golvgtoe4oqe20v43reg2arc; sf-prs-ss=637278992065060000; sf-prs-lu=https://localhost:44348/; sf_timezoneoffset=-180" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="localhost:44348" />
+    </item>
+    <item name="HTTP_REFERER">
+      <value string="https://localhost:44348/submit-a-success-story" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36" />
+    </item>
+    <item name="HTTP_SEC_FETCH_DEST">
+      <value string="empty" />
+    </item>
+    <item name="HTTP_X_REQUESTED_WITH">
+      <value string="XMLHttpRequest" />
+    </item>
+    <item name="HTTP_ORIGIN">
+      <value string="https://localhost:44348" />
+    </item>
+    <item name="HTTP_SEC_FETCH_SITE">
+      <value string="same-origin" />
+    </item>
+    <item name="HTTP_SEC_FETCH_MODE">
+      <value string="cors" />
+    </item>
+  </serverVariables>
+  <form>
+    <item name="Title">
+      <value string="gtgtgt" />
+    </item>
+    <item name="Description">
+      <value string="dfdf" />
+    </item>
+    <item name="SummaryDescription">
+      <value string="tgdgd" />
+    </item>
+    <item name="ProductsUsed">
+      <value string="dfgdfg" />
+    </item>
+    <item name="Company">
+      <value string="dfgdfg" />
+    </item>
+    <item name="CompanyWebsite">
+      <value string="ddfgdfg" />
+    </item>
+    <item name="Industry">
+      <value string="dfgdfg" />
+    </item>
+    <item name="X-Requested-With">
+      <value string="XMLHttpRequest" />
+    </item>
+  </form>
+  <cookies>
+    <item name="ai_user">
+      <value string="NGYi/|2020-04-03T12:35:11.530Z" />
+    </item>
+    <item name=".AspNet.Consent">
+      <value string="yes" />
+    </item>
+    <item name="sf_site">
+      <value string="b88067fd-040c-4815-8e55-d41b35c84ee5" />
+    </item>
+    <item name="44348.AspNet.Cookies">
+      <value string="u0ynuDczN4b6YY6Hru29ERs7pVAny-g-jXQ5eZpCOClFMWCJIPmUG78Akv5fo72_WCc-U2ByC0OBhdT6yW8P_Z5bBvgaLnaev4Y3gQfxW1_Ps5R3T4dpKtJQtPQl8hUpBSCVphRpP2GqXRJwHlYmdY-R7MoLQwTXCMydfqitois1koDTOJUqBIpXFnG2B5c5pRRnPnj2xZFuIfMccdaJ4W_G92tGrRsPS4H9w5018axzKJ-6YUs-HPI9C8d1yDlW8a5Z84jQSbrWnshApBhwLup3-vRRaiVc0VveSaIjGTeVG3z72rjK8aG9EpMTwue8B0Y7RfaxbQa16kv46qBw0j5a05blSaFPvWgNVuoEM2yjicN1E2GGP3YTpG2x7B4IYiP7z-cWmfn0kzDrW_4aIjHAGvyIphApml5gQf2dO47rQeGIRDyM5USkFUx3Qk58_fVr8yTBibFl8BoqlZxnNftDXlNC-NwYawNblLd7qVBLWLW2EDo7mrP1v9_cNaBceb4Ftl_8LRUchu_tJraVdIJSWui0TrxQIx9zWyYwHIjfRGnI71Xf3O3u980hC8NxJLApJ50ROB_seuSSYwhjOMYH8jEiO9AOrEWSC3b1KA8Nnp3teyxH6_2gY8J_tXrlGQZQiXU-aAQh28cFVWZpZThjBO6tFloEzAoDxV_WjpUF-OccLOgcbF1saVkbvSZFqbKv656ijFupbCoDBwMquvLdI4dQI4eMoQr1Jflo7JwJvCBFUgPHwwRo3hdCNaUrsSTfx9t47b2UJ-nDP8Qo7Fyd3DWFWNSUz8YHtJziS5puBzNebK0TVFL_Q8-glPE-JzApHzDllvRDTNp3_RfYYfiGk3_5ushsUbDbJyz2p4aE1gZMciK6jo-Z8YcWUgjyz1LxtnCbwphmxChsLZKwGM0_gk3oPv-O2VAS8BxxlojjujKTATUsD0X7L9wFg9WEqx_qoT4gli5xjg4N7kwLqFfPIWbkdlAE8Sv6iXllw85Ydnz1GHuV0K_NrlyNhREja2hQuXcYiO8NaTmCBybMG8g0IkY6vVy0Usoht5InGxJ-Xlta1KftSiTlwltwzdK6jE7ACjQWrCjNuWt9CaOQ9QGtuYcjaCP4QQIXIj9DXqr2Hyws-N121KtHVv5ovEQUjNppur8z7bIbpmpqTmiPeAsWo0XaEk13lTIKsdHCO017Oqv-EfEFYgAZjR2T9x3DvBooa3pcySGaG1PJFTjKKD0y0Knn871fpd48DkfS7lslS1zMmAH9e3j_ve4RUroZ0rBPJf5vGe_g-JJZ5MgjhB5T2pFlRfPUWcWQrC4AhfGt160dpn4YFjIkkbRmRy6K5uCLzVULB741Ov_yeVZYOKwoZTga7_28AdLMwtHE7kZ4_Tia4n7IlIobzmjheKQuAdSJoMAUUcb3GT1aRerRxXaTPk7tic8KRu29dtgqmT39HQx2dyyEeN426_dBr70HVP1k38HJFXz3b3mIYgQ1qOy0j5d--SchBQHreL8lAjPQCT5wZvhsn8ckN8PTsfbH7YO6fb7lm3W7w1RrhWXySPXHV4EWjmx-0fuFMUqqwa8-7rCmHcskjPAnDF9pOOEMtk5oEXezMvyrQKEkZQiKCbxini-M2inVoxDuC-Da67_XS43ynj6wOdHQf7smKUk2d_3-A2wgqEl8YWDsGAz7GZ3ZXHBnJudi7Q66Xh6-HrIfOSBynBQXoradmsULzof_pJMgA2ltDKaBRiMBA6r_udoSbK3wUSdifYC2p2uqiwHQLO1Krhqef_tKHubCrK5RkGhEseprboqCKQ5LJs_5zpjiSQ6XxpQVTXSjdSztF9c7cRBtArYQS1-rHRdE4zjgUaNmdkO3vwQFygFklCs4fRMqBbdfsxSwrQa7CUKhVhqbEfBM-mm4hTWfUScUcgDWRQlbp9242eJ8YKwcNADfbuHcLb0loPqkqCkYk-9SAqRVgQ1wI9SFCqJXKEv-nRcwctZTKzZpqhIfM3mEChQ4Wh4W1ZrLKYGaognAhkxlrrHbJ9NwStWoY65b8ttrTguHM9-YTrBwoZ3sDBoFXetXHehz6PJXDQ1Q5dCLuB_FE9Yc_lZg80Du5_u1TsyRGcUStEop6rZpRFBmAPwYOaoECcnals0U_psOynlWXyuliNkIBTuecmLm7eC41dGolGzjsmT78cUXCG3CQ4mHirdUeQlBasmHBaQJNKPZus9WveKcdQlnkXzEBDuqaow-IJdyCEwrPaXL0Feg2t18smwgUA" />
+    </item>
+    <item name="ASP.NET_SessionId">
+      <value string="golvgtoe4oqe20v43reg2arc" />
+    </item>
+    <item name="sf-prs-ss">
+      <value string="637278992065060000" />
+    </item>
+    <item name="sf-prs-lu">
+      <value string="https://localhost:44348/" />
+    </item>
+    <item name="sf_timezoneoffset">
+      <value string="-180" />
+    </item>
+  </cookies>
+</error>

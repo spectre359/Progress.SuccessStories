@@ -1,0 +1,144 @@
+﻿@using System.Web.Mvc;
+@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+@using Telerik.Sitefinity.Modules.Pages;
+@using Telerik.Sitefinity.UI.MVC;
+@using Telerik.Sitefinity.Services;
+
+
+<!DOCTYPE html>
+<html @Html.RenderLangAttribute()>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Success Stories</title>
+    <meta name="author" content="Philip Gubanov" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.ico">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="~/content/bootstrap.min.css">
+    <link rel="stylesheet" href="~/content/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/content/flaticon.css">
+    <link rel="stylesheet" href="~/content/slicknav.css">
+    <link rel="stylesheet" href="~/content/animate.min.css">
+    <link rel="stylesheet" href="~/content/magnific-popup.css">
+    <link rel="stylesheet" href="~/content/fontawesome-all.min.css">
+    <link rel="stylesheet" href="~/content/themify-icons.css">
+    <link rel="stylesheet" href="~/content/slick.css">
+    <link rel="stylesheet" href="~/content/nice-select.css">
+    <link rel="stylesheet" href="~/content/style.css">
+    <link rel="stylesheet" href="~/content/responsive.css">
+    <link rel="stylesheet" href="~/content/toastr.min.css"  />
+</head>
+
+<body>
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">                    
+                </div>
+            </div>
+        </div>
+    </div>
+    @Html.Section("top")
+
+    <div>
+        @Html.SfPlaceHolder("Contentplaceholder1")
+    </div>
+    <div>
+        @Html.SfPlaceHolder("Contentplaceholder2")
+    </div>
+    <div>
+        @Html.SfPlaceHolder("Contentplaceholder3")
+    </div>
+
+    @Html.Section("bottom")
+    <footer>
+
+        <!-- Footer Start-->
+        <div class="footer-main" data-background="../assets/img/shape/footer_bg.png">
+            <!-- footer-bottom area -->
+            <div class="footer-bottom-area footer-bg">
+                <div class="container">
+                    <div class="footer-border">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-xl-12 ">
+                                <div class="footer-copy-right text-center">
+                                    <p>
+                                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                        Copyright &copy;
+                                        <script>document.write(new Date().getFullYear());</script> All rights reserved | Developed by <a href="http://gubanov.ddns.net">Philip Gubanov</a>. Html template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End-->
+
+    </footer>
+    
+    <!-- All JS Custom Plugins Link here -->
+    <script src="~/scripts/modernizr-3.5.0.min.js"></script>
+    <!-- Jquery, Popper, Bootstrap -->    
+    <script src="~/scripts/jquery-migrate-3.3.0.min.js"></script>
+    <script src="~/scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="~/scripts/jquery.signalR-2.4.1.min.js"></script>
+    <script src="~/scripts/toastr.min.js"></script>
+    <script src="~/signalr/hubs"></script>
+    <script src="~/scripts/popper.min.js"></script>
+    <script src="~/scripts/bootstrap.min.js"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="~/scripts/jquery.slicknav.min.js"></script>
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="~/scripts/owl.carousel.min.js"></script>
+    <script src="~/scripts/slick.min.js"></script>
+    <!-- Date Picker -->
+    <script src="~/scripts/gijgo.min.js"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="~/scripts/wow.min.js"></script>
+    <script src="~/scripts/animated.headline.js"></script>
+    <script src="~/scripts/jquery.magnific-popup.js"></script>
+    <!-- Scrollup, nice-select, sticky -->
+    <script src="~/scripts/jquery.scrollUp.min.js"></script>
+    <script src="~/scripts/jquery.nice-select.min.js"></script>
+    <script src="~/scripts/jquery.sticky.js"></script>
+    <!-- contact js -->
+    <script src="~/scripts/contact.js"></script>
+    <script src="~/scripts/jquery.form.js"></script>
+    <script src="~/scripts/jquery.validate.min.js"></script>
+    <script src="~/scripts/mail-script.js"></script>
+    <script src="~/scripts/jquery.ajaxchimp.min.js"></script>
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="~/scripts/plugins.js"></script>
+    <script src="~/scripts/main.js"></script>
+    <script src="~/scripts/jquery.signalR-2.4.1.min.js"></script>
+    <script src="~/signalr/hubs"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+           $.connection.hub.url = "@Request.Url.GetLeftPart(UriPartial.Authority)/signalr";
+            var contact = $.connection.notificationsHub;
+            window.hubReady = $.connection.hub.start();
+            contact.client.notifyUsers = function () {
+                $.get("@Request.Url.GetLeftPart(UriPartial.Authority)/getMessage", function (data) {
+                    toastr.info(data);
+                });
+            };
+            window.hubReady.done(function () {
+                $("#notifybtn").click(function () {                    
+                    contact.server.newStorySubmitted($("#Title").val()+"_"+$("#Company").val());
+                });                        
+            });
+        });
+
+       
+    </script>
+</body>
+</html>
