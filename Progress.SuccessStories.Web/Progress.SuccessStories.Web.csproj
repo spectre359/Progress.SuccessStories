@@ -989,6 +989,7 @@
       <DependentUpon>Sitefinity.mdf</DependentUpon>
     </Content>
     <Content Include="App_Readme\Elmah.txt" />
+    <Content Include="assets\img\shape\footer_bg.png" />
     <Content Include="content\animate.min.css" />
     <Content Include="content\bootstrap.min.css" />
     <Content Include="content\flaticon.css" />
@@ -1381,6 +1382,8 @@
     <Content Include="App_Data\Sitefinity\Logs\Trace.2020-06-15.1.log" />
     <Content Include="App_Data\Sitefinity\Logs\UpgradeTrace.log" />
     <Content Include="App_Data\Sitefinity\Logs\WebClient.log" />
+    <Content Include="App_Data\Sitefinity\Configuration\ProjectConfig.config" />
+    <Content Include="App_Data\Sitefinity\Configuration\SystemConfig.config" />
     <None Include="packages.config" />
     <Content Include="ResourcePackages\Bootstrap4\MVC\Views\Layouts\SuccessStories.cshtml" />
   </ItemGroup>
